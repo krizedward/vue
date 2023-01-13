@@ -6,7 +6,7 @@
 </template>
 
 <script>
-// @ is an alias to /src
+
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
@@ -16,3 +16,22 @@ export default {
   }
 }
 </script>
+
+<!-- <template>
+  <ContentHeader title="Home"/>
+  <content>
+    <div class="row">
+      <div class="col-6">
+        <div class="card-header">
+
+        </div>
+        <div class="card-body">
+
+        </div>
+        <div class="card-footer">
+
+        </div>
+      </div>
+    </div>
+  </content>
+</template> -->

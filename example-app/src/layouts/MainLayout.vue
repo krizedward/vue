@@ -1,34 +1,10 @@
 <template>
     
     <div class="wrapper">
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-        
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-                </li>
-            </ul>
-        
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link" data-toggle="dropdown" href="#">
-                        <i class="far fa-user"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right">
-        
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-user mr-2"></i> My Profile
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item">
-                            <i class="fas fa-sign-out-alt mr-2"></i> Log Out
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <Navbar />
+
+        <Sidebar />
+        <!-- <aside class="main-sidebar sidebar-dark-primary elevation-4">
     
             <a href="/adminlte/index3.html" class="brand-link">
                 <img src="/adminlte/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
@@ -699,11 +675,11 @@
     
             </div>
     
-        </aside>
+        </aside> -->
     
         <div class="content-wrapper">
     
-            <section class="content-header">
+            <!-- <section class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
@@ -717,9 +693,10 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
     
-            <section class="content">
+            <route-view />
+            <!-- <section class="content">
     
                 <div class="card">
                     <div class="card-header">
@@ -743,7 +720,7 @@
     
                 </div>
     
-            </section>
+            </section> -->
     
         </div>
     
@@ -763,11 +740,14 @@
 </template>
 
 <script>
-import Navbar from './inc/Navbar.vue'
+// import Navbar from './inc/Navbar.vue'
+import Navbar from '@/layouts/inc/Navbar.vue'
+import Sidebar from '@/layouts/inc/Sidebar.vue'
 
 export default {
-    component: {
+    components: {
         Navbar,
+        Sidebar,
     }
 }
 </script>
